@@ -11,8 +11,8 @@ const {
 //new wallet
 const newPair = new Keypair();
 console.log(newPair);
-  
-											 
+
+//getting public and private key from KeyPair 										 
 const publicKey = new PublicKey(newPair._keypair.publicKey).toString();
 const privateKey = newPair._keypair.secretKey;
 
@@ -44,19 +44,7 @@ const airDropSol = async() => {
         //confirming the transaction
         await connection.confirmTransaction(fromAirDropSign);
     }
-	
-  
-												  
-								  
-		 
-																			  
-																   
-											
-																   
-											   
-							
-		
-																
+									
     catch(err){
         console.log(err);
     }
