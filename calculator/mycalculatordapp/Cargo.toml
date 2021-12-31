@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "programs/*"
+]
+
+solana-frozen-abi = "1.9.2"
